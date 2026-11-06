@@ -1,0 +1,19 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": { "fields": ["domain", "grade", "score", "critical", "high", "medium", "tlsDaysLeft", "dmarcPolicy", "hsts", "topFindings", "error"] },
+      "display": {
+        "component": "table",
+        "properties": {
+          "domain": { "label": "Domain" }, "grade": { "label": "Grade" }, "score": { "label": "Score", "format": "number" },
+          "critical": { "label": "Critical", "format": "number" }, "high": { "label": "High", "format": "number" }, "medium": { "label": "Medium", "format": "number" },
+          "tlsDaysLeft": { "label": "TLS days left", "format": "number" }, "dmarcPolicy": { "label": "DMARC" }, "hsts": { "label": "HSTS", "format": "boolean" },
+          "topFindings": { "label": "Top findings", "format": "array" }, "error": { "label": "Error" }
+        }
+      }
+    }
+  }
+}

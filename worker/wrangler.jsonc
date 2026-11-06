@@ -1,0 +1,17 @@
+{
+  // Free plan only: no bindings (no Workers AI, KV, D1, R2, Durable Objects, Queues).
+  // Workers Free refuses requests beyond its daily quota instead of billing.
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "mena-mcp",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "alias": {
+    "node:dns/promises": "./src/shims/dns.js",
+    "node:net": "./src/shims/net.js",
+    "node:tls": "./src/shims/tls.js"
+  },
+  "observability": { "enabled": false }
+}

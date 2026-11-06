@@ -1,0 +1,39 @@
+{
+  "name": "@alycheaib/compliance-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for SOC 2, ISO 27001:2022 and GDPR readiness: cross-framework control mapping, gap assessment, evidence checklists, policy templates, GDPR deadlines, DPIA screening and technical evidence scans",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "compliance",
+    "grc",
+    "audit",
+    "security"
+  ],
+  "bin": {
+    "compliance-mcp": "src/cli.js"
+  },
+  "main": "src/server.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "Aly Cheaib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alycheaib/mena-mcp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

@@ -39,10 +39,14 @@ export async function assertPublicHost(host) {
 
 const withTimeout = (p, ms, what) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(`${what} timed out after ${ms} ms`)), ms))]);
 
+// Runtimes without raw TLS sockets (e.g. Cloudflare Workers) plug in their own certificate provider here.
+export const providers = { tls: null };
+
 // ---------- TLS ----------
 export async function checkTls(hostInput, port = 443) {
   const host = normalizeHost(hostInput);
   await assertPublicHost(host);
+  if (providers.tls) return providers.tls(host, port);
   const sock = await withTimeout(new Promise((resolve, reject) => {
     const s = tls.connect({ host, port, servername: net.isIP(host) ? undefined : host, rejectUnauthorized: false, ALPNProtocols: ['h2', 'http/1.1'] }, () => resolve(s));
     s.once('error', reject);

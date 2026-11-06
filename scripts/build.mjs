@@ -1,7 +1,7 @@
 // Bundles each MCP server into a single dependency-free file inside its Claude Code plugin folder.
 import { build } from 'esbuild';
 
-for (const name of ['gulf-business', 'infra-audit', 'business-db']) {
+for (const name of ['gulf-business', 'infra-audit', 'business-db', 'gcc-hr', 'compliance']) {
   await build({
     entryPoints: [`packages/${name}/src/cli.js`],
     outfile: `plugins/${name}/server.mjs`,

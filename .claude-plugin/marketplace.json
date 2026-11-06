@@ -75,6 +75,50 @@
         "analytics"
       ],
       "category": "database"
+    },
+    {
+      "name": "gcc-hr",
+      "source": "./plugins/gcc-hr",
+      "description": "GCC HR & payroll for Claude: UAE end-of-service gratuity, Saudi end-of-service award, GOSI contributions, annual leave, overtime and final settlement statements.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Aly Cheaib",
+        "url": "https://github.com/alycheaib"
+      },
+      "license": "MIT",
+      "keywords": [
+        "hr",
+        "payroll",
+        "gratuity",
+        "gosi",
+        "uae",
+        "saudi",
+        "end-of-service",
+        "labour-law"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "compliance",
+      "source": "./plugins/compliance",
+      "description": "SOC 2, ISO 27001:2022 and GDPR readiness for Claude: cross-framework control mapping, gap assessment, evidence checklists, policy templates, GDPR deadlines, DPIA screening, technical evidence scans and progress tracking.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Aly Cheaib",
+        "url": "https://github.com/alycheaib"
+      },
+      "license": "MIT",
+      "keywords": [
+        "soc2",
+        "iso27001",
+        "gdpr",
+        "compliance",
+        "grc",
+        "audit",
+        "security",
+        "privacy"
+      ],
+      "category": "security"
     }
   ]
 }

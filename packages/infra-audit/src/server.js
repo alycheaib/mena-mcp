@@ -2,8 +2,8 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
 import { checkTls, checkHeaders, dnsRecords, emailSecurity, eolCheck, eolProducts, auditDomain } from './checks.js';
 
-export function createServer() {
-  const server = new McpServer({ name: 'infra-audit', version: '0.1.0' });
+export function createServer(options = {}) {
+  const server = new McpServer({ name: 'infra-audit', version: '0.1.0' }, options);
   const ann = { readOnlyHint: true, openWorldHint: true, idempotentHint: true };
 
   const tool = (name, title, description, inputSchema, fn) =>

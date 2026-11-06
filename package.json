@@ -18,6 +18,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "esbuild": "^0.25.10"
+    "@cfworker/json-schema": "^4.1.6",
+    "esbuild": "^0.25.10",
+    "wrangler": "^4.158.0"
   }
 }

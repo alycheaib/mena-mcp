@@ -1,0 +1,22 @@
+{
+  "name": "gcc-hr",
+  "version": "0.1.0",
+  "description": "GCC HR & payroll for Claude: UAE end-of-service gratuity, Saudi end-of-service award, GOSI contributions, annual leave, overtime and final settlement statements.",
+  "author": {
+    "name": "Aly Cheaib",
+    "url": "https://github.com/alycheaib"
+  },
+  "homepage": "https://github.com/alycheaib/mena-mcp",
+  "repository": "https://github.com/alycheaib/mena-mcp",
+  "license": "MIT",
+  "keywords": [
+    "hr",
+    "payroll",
+    "gratuity",
+    "gosi",
+    "uae",
+    "saudi",
+    "end-of-service",
+    "labour-law"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@alycheaib/gcc-hr-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for GCC HR & payroll: UAE gratuity, Saudi end-of-service award, GOSI contributions, annual leave, overtime and final settlement",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "hr",
+    "payroll",
+    "gratuity",
+    "gosi",
+    "uae",
+    "saudi",
+    "end-of-service"
+  ],
+  "bin": {
+    "gcc-hr-mcp": "src/cli.js"
+  },
+  "main": "src/server.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "Aly Cheaib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alycheaib/mena-mcp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

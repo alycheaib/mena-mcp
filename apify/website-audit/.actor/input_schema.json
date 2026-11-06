@@ -1,0 +1,12 @@
+{
+  "title": "Website Security & Compliance Audit input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "domains": { "title": "Domains", "type": "array", "description": "Domains or URLs to audit, e.g. example.com. Only audit domains you own or are authorised to assess.", "editor": "stringList", "prefill": ["example.com", "github.com"] },
+    "software": { "title": "Software versions to check for end of life (optional)", "type": "array", "description": "e.g. [{\"product\":\"php\",\"version\":\"7.4\"}] using endoflife.date product names.", "editor": "json", "default": [] },
+    "includeComplianceMapping": { "title": "Map findings to SOC 2 / ISO 27001 / GDPR controls", "type": "boolean", "default": true },
+    "maxConcurrency": { "title": "Max concurrency", "type": "integer", "minimum": 1, "maximum": 20, "default": 5 }
+  },
+  "required": ["domains"]
+}

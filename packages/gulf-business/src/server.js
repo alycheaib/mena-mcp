@@ -4,8 +4,8 @@ import { calculateVat, VAT_RATES, zatcaQrEncode, zatcaQrDecode, validateVatNumbe
 import { amountToArabicWords, numberToArabicWords, CURRENCIES } from './tafqeet.js';
 import { gregorianToHijri, hijriToGregorian, countWorkingDays, addWorkingDays } from './calendar.js';
 
-export function createServer() {
-  const server = new McpServer({ name: 'gulf-business', version: '0.1.0' });
+export function createServer(options = {}) {
+  const server = new McpServer({ name: 'gulf-business', version: '0.1.0' }, options);
   const ro = { readOnlyHint: true, openWorldHint: false };
 
   const tool = (name, title, description, inputSchema, fn) =>
