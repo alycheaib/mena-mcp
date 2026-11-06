@@ -1,0 +1,21 @@
+{
+  "name": "business-db",
+  "version": "0.1.0",
+  "description": "Safe read-only business database connector for Claude: ask questions of SQLite/PostgreSQL data with engine-level write blocking, row limits, PII masking and table allow/deny lists.",
+  "author": {
+    "name": "Aly Cheaib",
+    "url": "https://github.com/alycheaib"
+  },
+  "homepage": "https://github.com/alycheaib/mena-mcp",
+  "repository": "https://github.com/alycheaib/mena-mcp",
+  "license": "MIT",
+  "keywords": [
+    "database",
+    "sql",
+    "sqlite",
+    "postgres",
+    "read-only",
+    "pii",
+    "analytics"
+  ]
+}

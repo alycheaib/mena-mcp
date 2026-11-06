@@ -1,0 +1,39 @@
+{
+  "name": "@alycheaib/infra-audit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for passive website/infra audits: TLS certificates, security headers, DNS, SPF/DMARC email security, end-of-life software",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "security",
+    "ssl",
+    "tls",
+    "dns",
+    "dmarc",
+    "endoflife",
+    "audit"
+  ],
+  "bin": {
+    "infra-audit-mcp": "src/cli.js"
+  },
+  "main": "src/server.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "Aly Cheaib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alycheaib/mena-mcp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

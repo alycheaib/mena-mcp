@@ -1,0 +1,23 @@
+{
+  "name": "infra-audit",
+  "version": "0.1.0",
+  "description": "Passive website & infrastructure audit for Claude: TLS certificates, security headers, SPF/DMARC/DKIM, DNS/CAA and end-of-life software, with a graded report and fixes.",
+  "author": {
+    "name": "Aly Cheaib",
+    "url": "https://github.com/alycheaib"
+  },
+  "homepage": "https://github.com/alycheaib/mena-mcp",
+  "repository": "https://github.com/alycheaib/mena-mcp",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "ssl",
+    "tls",
+    "dmarc",
+    "spf",
+    "dns",
+    "endoflife",
+    "audit",
+    "devops"
+  ]
+}

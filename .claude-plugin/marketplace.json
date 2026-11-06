@@ -1,0 +1,80 @@
+{
+  "name": "mena-mcp",
+  "owner": {
+    "name": "Aly Cheaib",
+    "url": "https://github.com/alycheaib"
+  },
+  "metadata": {
+    "description": "MCP connectors and Claude Code plugins for Gulf/MENA businesses and infrastructure teams",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "gulf-business",
+      "source": "./plugins/gulf-business",
+      "description": "Gulf & MENA business toolkit for Claude: GCC VAT, ZATCA e-invoice QR, IBAN and VAT-number validation, Hijri dates, working days, Arabic amount in words (tafqeet).",
+      "version": "0.1.0",
+      "author": {
+        "name": "Aly Cheaib",
+        "url": "https://github.com/alycheaib"
+      },
+      "license": "MIT",
+      "keywords": [
+        "zatca",
+        "vat",
+        "gcc",
+        "saudi",
+        "uae",
+        "arabic",
+        "invoice",
+        "hijri",
+        "iban"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "infra-audit",
+      "source": "./plugins/infra-audit",
+      "description": "Passive website & infrastructure audit for Claude: TLS certificates, security headers, SPF/DMARC/DKIM, DNS/CAA and end-of-life software, with a graded report and fixes.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Aly Cheaib",
+        "url": "https://github.com/alycheaib"
+      },
+      "license": "MIT",
+      "keywords": [
+        "security",
+        "ssl",
+        "tls",
+        "dmarc",
+        "spf",
+        "dns",
+        "endoflife",
+        "audit",
+        "devops"
+      ],
+      "category": "security"
+    },
+    {
+      "name": "business-db",
+      "source": "./plugins/business-db",
+      "description": "Safe read-only business database connector for Claude: ask questions of SQLite/PostgreSQL data with engine-level write blocking, row limits, PII masking and table allow/deny lists.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Aly Cheaib",
+        "url": "https://github.com/alycheaib"
+      },
+      "license": "MIT",
+      "keywords": [
+        "database",
+        "sql",
+        "sqlite",
+        "postgres",
+        "read-only",
+        "pii",
+        "analytics"
+      ],
+      "category": "database"
+    }
+  ]
+}

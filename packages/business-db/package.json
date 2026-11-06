@@ -1,0 +1,38 @@
+{
+  "name": "@alycheaib/business-db-mcp",
+  "version": "0.1.0",
+  "description": "Safe read-only MCP connector for business databases (SQLite/PostgreSQL): schema discovery, guarded SQL, row limits and PII masking",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "sql",
+    "sqlite",
+    "postgres",
+    "database",
+    "read-only",
+    "pii"
+  ],
+  "bin": {
+    "business-db-mcp": "src/cli.js"
+  },
+  "main": "src/server.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "Aly Cheaib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alycheaib/mena-mcp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

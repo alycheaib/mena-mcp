@@ -1,0 +1,23 @@
+{
+  "name": "gulf-business",
+  "version": "0.1.0",
+  "description": "Gulf & MENA business toolkit for Claude: GCC VAT, ZATCA e-invoice QR, IBAN and VAT-number validation, Hijri dates, working days, Arabic amount in words (tafqeet).",
+  "author": {
+    "name": "Aly Cheaib",
+    "url": "https://github.com/alycheaib"
+  },
+  "homepage": "https://github.com/alycheaib/mena-mcp",
+  "repository": "https://github.com/alycheaib/mena-mcp",
+  "license": "MIT",
+  "keywords": [
+    "zatca",
+    "vat",
+    "gcc",
+    "saudi",
+    "uae",
+    "arabic",
+    "invoice",
+    "hijri",
+    "iban"
+  ]
+}

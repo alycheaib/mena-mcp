@@ -1,0 +1,23 @@
+{
+  "name": "mena-mcp",
+  "version": "0.1.0",
+  "description": "MCP connectors for Gulf/MENA businesses: Gulf business toolkit, infra audit, safe business DB",
+  "scripts": {
+    "test": "node --test --no-warnings test/*.test.js",
+    "build": "node scripts/build.mjs"
+  },
+  "author": "Aly Cheaib",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  }
+}
