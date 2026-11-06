@@ -155,7 +155,14 @@ npm run build     # bundle each server into plugins/<name>/server.mjs
 ```
 Source lives in `packages/<name>/src`; `server.js` exports `createServer()` and `cli.js` runs it over stdio.
 
-## Custom connectors & support
-Need Claude connected to **your** ERP (Odoo, SAP B1), database, e-invoicing or internal APIs, with the same safety model, or a hosted version for your team? Open an issue or contact [Aly Cheaib](https://github.com/alycheaib).
+## Work with me
+| Service | What you get |
+|---|---|
+| **Security & compliance readiness report** | Domain audit plus SOC 2 / ISO 27001 / GDPR gap assessment, a prioritised 90-day roadmap and starter policies, delivered in 5 days |
+| **Connect Claude to your systems** | Odoo, SAP B1, internal databases, e-invoicing or internal APIs, with the same read-only and PII-masking safety model, delivered in 7–10 days |
+| **Hosted & monitored connectors** | Your private MCP endpoints, plus monitoring of certificates, DMARC and end-of-life software |
+
+Open an issue titled **"Custom connector request"** or **"Readiness report"**: [new request](https://github.com/alycheaib/mena-mcp/issues/new?title=Custom%20connector%20request). ⭐ Star the repo if it helps you; it helps others find it.
+
 
 MIT License © 2026 Aly Cheaib
